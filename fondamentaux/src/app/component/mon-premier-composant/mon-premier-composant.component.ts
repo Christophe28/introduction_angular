@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesService, Movie } from '../../services/movies.service';
+import { AuthorsAppService, Author } from '../../services/authors-app.service';
 
 @Component({
   //Peut fonctionner comme un sélecteur css
@@ -12,9 +13,11 @@ export class MonPremierComposantComponent {
   criDeVictoire = "Hourra !";
 
   declare movies: Movie[];
-
-  constructor(private moviesService:MoviesService) {
+  declare author: Author[];
+  constructor(private moviesService:MoviesService, private authorService:AuthorsAppService) {
     this.movies = this.moviesService.getAllMovies();
+    this.author = this.authorService.getAllAuthor();
+    authorService.getTest();
   };
 
   getBanane() {
