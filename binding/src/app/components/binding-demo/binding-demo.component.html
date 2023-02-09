@@ -1,0 +1,18 @@
+<input type="text" [disabled]="isNotAllowedToWrite" (keyup.enter)="changeUserName(userNameInput)" #userNameInput/>
+
+<p>
+    Binding à deux sens
+</p>
+<input type="text" [disabled]="isNotAllowedToWrite" [(ngModel)]="username" />
+<p>{{username}}</p>
+
+<p [ngClass]="{
+    premium: isPremium,
+    bidon: isPremium
+}" [ngStyle]="{
+    border: isPremium ? '1px solid purple' : 'none',
+    fontSize: isPremium ? '32px' : '1em'
+}">
+    Respectez les loutres slvp.
+    Le reste c'est pas grave !
+</p>
