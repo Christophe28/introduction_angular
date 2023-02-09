@@ -10,3 +10,15 @@ Créer un composant authors:
 Pour signaler à angular qu'il va recevoir du javascript dans les propriétés html il faut mettre la propriété html entre braket []. Comme ceci [disable] = "maLogiqueJavascript"
 
 Pour faire du binding à deux sens (cad l'html qui communique avec le js et le js qui communique avec l'html) il faut aller dans app.module.ts ==> import et y ajouter formsModule. Dans l'html on utilise le formsModule de la sorte : [(ngModule)] = "";
+
+
+
+
+
+
+
+
+
+
+Git! 
+Comment faire un commit antérieur ? 
