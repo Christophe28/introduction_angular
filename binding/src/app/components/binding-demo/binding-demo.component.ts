@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class BindingDemoComponent {
   isNotAllowedToWrite = false;
   isPremium = true;
-  username = "Malinx le malin"
+  username = "Malinx le malin";
 
   changeUserName(input: HTMLInputElement) {
     this.username = input.value;

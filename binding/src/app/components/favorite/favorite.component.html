@@ -1,0 +1,16 @@
+<p 
+    (click)="changeStar(container_star)" 
+    class="style_star"
+    #container_star
+>
+    {{galaxy_gardian}} 
+</p>
+<!-- Correction -->
+<p>Correction exercice</p>
+<p>façon Romain</p>
+<p (click)="toggleIsFavorite()">{{star}}</p>
+
+
+<!-- Reda style -->
+<p>Façon reda</p>
+<p (click)="isEmpty = !isEmpty" [innerHTML]="isEmpty ? '☆' : '★'"></p>

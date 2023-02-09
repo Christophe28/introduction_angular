@@ -1,1 +1,3 @@
-Je ne sais pas quels consignes mais ça va aller
+Créer un composant favorite
+    Par défaut, il va afficher ☆.
+    quand on clique dessus, notre ☆ devient ★
