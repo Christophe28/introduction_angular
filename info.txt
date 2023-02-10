@@ -19,6 +19,6 @@ Pour faire du binding à deux sens (cad l'html qui communique avec le js et le j
 
 
 
-
+ 
 Git! 
 Comment faire un commit antérieur ? 

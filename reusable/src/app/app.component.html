@@ -38,3 +38,19 @@
 <div *ngIf="1 === 1 then michou else board">
     Ce texte ne sera jamais affiché. Vous pouvez écrire n'importe quoi.
 </div>
+<h1>=======================Exercice============================</h1>
+<app-exo title="Ma collection de loutre" [isHidden]="false" manager="Romain" [clickCount]="clickCountPerAnimal.otter" (emitConsoleClick)="consoleClick('otter')">
+    <ng-container>
+        <p>La loutre de chantier</p>
+        <p>La loutre clean code</p>
+        <button>Abonnez vous aux loutres</button>
+    </ng-container>
+</app-exo>
+
+<app-exo title="Ma collection de bébé chauve-souris" [isHidden]="true" manager="Kriss" [clickCount]="clickCountPerAnimal.bat" (emitConsoleClick)="consoleClick('bat')">
+    <ng-container>
+        <p>La chauve-souris de chantier</p>
+        <p>La chauve-souris clean code</p>
+        <button>Abonnez vous aux loutres</button>
+    </ng-container>
+</app-exo>
